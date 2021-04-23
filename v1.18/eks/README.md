@@ -42,7 +42,7 @@ Start the conformance tests on your EKS cluster
 sonobuoy run \
   --mode=certified-conformance \
   --kubeconfig=/tmp/test-eks.kubeconfig.yaml \
-  --kube-conformance-image gcr.io/google-containers/conformance:v1.18.8
+  --kube-conformance-image gcr.io/google-containers/conformance:v1.18.6
 ````
 
 You can monitor the conformance tests by tracking the sonobuoy logs. Wait for the line `no-exit was specified, sonobuoy is now blocking`, which signals the end of the testing.
